@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Report Studio | Utku Karaca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-sky-500/20 blur-3xl"></div>
+        <div class="absolute top-1/2 -right-24 h-80 w-80 rounded-full bg-indigo-500/15 blur-3xl"></div>
+    </div>
+
+    <nav class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex h-16 items-center justify-between">
+                <a href="index.html" class="text-lg font-semibold tracking-tight text-white">Utku Karaca</a>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="index.html" class="hover:text-white transition">Home</a>
+                    <a href="advanced-reports.html" class="hover:text-white transition">Advanced Reports</a>
+                    <a href="project_y.html" class="text-white">Database Report Studio</a>
+                    <a href="project_x.html" class="hover:text-white transition">Marketplace Operations Hub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 lg:py-24">
+        <a href="index.html" class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10">
+            <span class="mr-2">&larr;</span> Back to Home
+        </a>
+
+        <section class="mt-10 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+            <div>
+                <span class="inline-flex items-center rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm font-medium text-sky-200">
+                    Formerly Project Y
+                </span>
+                <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Database Report Studio</h1>
+                <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                    A lightweight Jasper-style database reporting tool that helps teams explore schemas, build queries, and export usable reports without unnecessary complexity.
+                </p>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/20 backdrop-blur">
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                        <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Explore</p>
+                        <p class="mt-2 text-lg font-semibold text-white">Schemas and dependencies</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                        <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Build</p>
+                        <p class="mt-2 text-lg font-semibold text-white">Query and report flow</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                        <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Export</p>
+                        <p class="mt-2 text-lg font-semibold text-white">HTML, PDF, and markdown</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                        <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Runtime</p>
+                        <p class="mt-2 text-lg font-semibold text-white">Electron + local backend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-lg font-semibold text-white">Database exploration</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Inspect schemas, packages, and dependencies from a single workspace.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-lg font-semibold text-white">Query creation</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Use the visual builder to assemble SQL with fewer manual mistakes.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-lg font-semibold text-white">Report output</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Generate reusable report artifacts for analysts and business users.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-lg font-semibold text-white">Simple and usable</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Designed to feel lighter than Jasper while keeping the workflow practical.</p>
+            </div>
+        </section>
+
+        <section class="mt-12 rounded-3xl border border-white/10 bg-slate-900/70 p-8">
+            <div class="flex flex-wrap items-end justify-between gap-4 border-b border-white/10 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white">Why this looks professional in a CV</h2>
+                    <p class="mt-2 text-sm text-slate-300">A recruiter can read this product in under a minute and understand scope, value, and technical ownership.</p>
+                </div>
+                <span class="rounded-full border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm font-semibold text-sky-200">Interview-friendly narrative</span>
+            </div>
+
+            <div class="mt-6 grid gap-4 md:grid-cols-3">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Problem</p>
+                    <p class="mt-2 text-sm text-slate-200">Database reporting was fragmented across scripts and manual steps.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Solution</p>
+                    <p class="mt-2 text-sm text-slate-200">A unified desktop studio for exploration, query building, and report export.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Result</p>
+                    <p class="mt-2 text-sm text-slate-200">Faster reporting cycles with cleaner and reusable deliverables.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 rounded-3xl border border-white/10 bg-slate-900/60 p-8 shadow-xl shadow-black/10">
+            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white">System previews</h2>
+                    <p class="mt-2 text-sm text-slate-300">Real screenshots from the application, organized around the main user flow.</p>
+                </div>
+                <div class="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-200">
+                    Designed for practical database reporting
+                </div>
+            </div>
+
+            <div class="mt-8 grid gap-6">
+                <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-3 shadow-lg">
+                    <p class="mb-3 px-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Database explorer</p>
+                    <img src="project_y_im/img1.png" alt="Database Report Studio database explorer" class="w-full rounded-xl border border-white/10 transition duration-500 hover:scale-[1.01]">
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-3 shadow-lg">
+                    <p class="mb-3 px-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Query and report builder</p>
+                    <img src="project_y_im/img2.png" alt="Database Report Studio visual query creator" class="w-full rounded-xl border border-white/10 transition duration-500 hover:scale-[1.01]">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 rounded-3xl border border-white/10 bg-white/5 p-8">
+            <div class="flex flex-wrap items-end justify-between gap-4 border-b border-white/10 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white">Report output preview</h2>
+                    <p class="mt-2 text-sm text-slate-300">A cleaner, more visual look at how the studio turns raw data into ready-to-share output.</p>
+                </div>
+                <div class="rounded-full border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm font-semibold text-sky-200">
+                    Simple, practical, and presentation-friendly
+                </div>
+            </div>
+
+            <div class="mt-8 grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+                <div class="rounded-3xl border border-white/10 bg-slate-950/80 p-5 shadow-2xl shadow-black/20">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Export preview</p>
+                            <h3 class="mt-1 text-xl font-bold text-white">Report package</h3>
+                        </div>
+                        <div class="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">PDF / HTML / Markdown</div>
+                    </div>
+
+                    <div class="mt-5 rounded-3xl border border-white/10 bg-white text-slate-900 shadow-lg overflow-hidden">
+                        <div class="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-4 py-3">
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Database report studio</p>
+                                <p class="text-sm font-semibold text-slate-700">Executive extract</p>
+                            </div>
+                            <div class="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-700">Generated</div>
+                        </div>
+
+                        <div class="grid gap-4 p-4 sm:grid-cols-3">
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Objects</p>
+                                <p class="mt-2 text-2xl font-bold text-slate-900">42</p>
+                                <p class="mt-1 text-sm text-slate-600">Tables and views included</p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Queries</p>
+                                <p class="mt-2 text-2xl font-bold text-slate-900">18</p>
+                                <p class="mt-1 text-sm text-slate-600">Reused across report sections</p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Exports</p>
+                                <p class="mt-2 text-2xl font-bold text-slate-900">3</p>
+                                <p class="mt-1 text-sm text-slate-600">PDF, HTML, and Markdown</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-slate-200 p-4">
+                            <div class="mb-3 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-500">
+                                <span>Top entities</span>
+                                <span>Activity score</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-28 text-sm font-medium text-slate-700">Orders</span>
+                                    <div class="h-3 flex-1 rounded-full bg-slate-100">
+                                        <div class="h-3 w-[82%] rounded-full bg-sky-500"></div>
+                                    </div>
+                                    <span class="w-12 text-right text-sm font-semibold text-slate-700">82%</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-28 text-sm font-medium text-slate-700">Products</span>
+                                    <div class="h-3 flex-1 rounded-full bg-slate-100">
+                                        <div class="h-3 w-[64%] rounded-full bg-emerald-500"></div>
+                                    </div>
+                                    <span class="w-12 text-right text-sm font-semibold text-slate-700">64%</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-28 text-sm font-medium text-slate-700">Schema links</span>
+                                    <div class="h-3 flex-1 rounded-full bg-slate-100">
+                                        <div class="h-3 w-[48%] rounded-full bg-amber-500"></div>
+                                    </div>
+                                    <span class="w-12 text-right text-sm font-semibold text-slate-700">48%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl border border-white/10 bg-slate-950/80 p-5 shadow-2xl shadow-black/20">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Query-to-report flow</p>
+                            <h3 class="mt-1 text-xl font-bold text-white">Visual build pipeline</h3>
+                        </div>
+                        <div class="rounded-full bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-200">Fast and simple</div>
+                    </div>
+
+                    <div class="mt-5 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-6">
+                        <div class="grid gap-4 sm:grid-cols-3">
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Step 1</p>
+                                <p class="mt-2 text-sm font-semibold text-white">Select schema</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Step 2</p>
+                                <p class="mt-2 text-sm font-semibold text-white">Build query</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Step 3</p>
+                                <p class="mt-2 text-sm font-semibold text-white">Export report</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 h-44 rounded-2xl border border-white/10 bg-slate-900/70 p-4">
+                            <div class="mb-3 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
+                                <span>Relationships</span>
+                                <span>Simple visualization</span>
+                            </div>
+                            <svg viewBox="0 0 520 120" class="h-full w-full" aria-label="Relationship chart">
+                                <g stroke="#475569" stroke-width="2">
+                                    <line x1="80" y1="60" x2="180" y2="35" />
+                                    <line x1="80" y1="60" x2="180" y2="85" />
+                                    <line x1="180" y1="35" x2="300" y2="35" />
+                                    <line x1="180" y1="85" x2="300" y2="85" />
+                                    <line x1="300" y1="35" x2="420" y2="60" />
+                                    <line x1="300" y1="85" x2="420" y2="60" />
+                                </g>
+                                <g>
+                                    <circle cx="80" cy="60" r="18" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+                                    <circle cx="180" cy="35" r="16" fill="#0f172a" stroke="#34d399" stroke-width="3" />
+                                    <circle cx="180" cy="85" r="16" fill="#0f172a" stroke="#34d399" stroke-width="3" />
+                                    <circle cx="300" cy="35" r="16" fill="#0f172a" stroke="#f59e0b" stroke-width="3" />
+                                    <circle cx="300" cy="85" r="16" fill="#0f172a" stroke="#f59e0b" stroke-width="3" />
+                                    <circle cx="420" cy="60" r="18" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h2 class="text-2xl font-bold text-white">Tech stack</h2>
+            <div class="mt-5 flex flex-wrap gap-3 text-sm font-semibold">
+                <span class="rounded-full bg-sky-400/10 px-4 py-2 text-sky-200">Electron</span>
+                <span class="rounded-full bg-sky-400/10 px-4 py-2 text-sky-200">Angular</span>
+                <span class="rounded-full bg-sky-400/10 px-4 py-2 text-sky-200">Python</span>
+                <span class="rounded-full bg-sky-400/10 px-4 py-2 text-sky-200">Oracle SQL</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
